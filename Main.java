@@ -4,5 +4,15 @@ public class Main
   {
     System.out.println("Hello, world");
     System.out.print("I am Ethan");
+  
+    int Health;
+    Health = 20;
+    System.out.println("HP:" + Health);
+    
+    double Damage = 3.5;
+    System.out.println("DMG:" + Damage);
+    
+    final boolean Hazards = true;
+    System.out.println("Hazards:" + Hazards);    
   }
 }

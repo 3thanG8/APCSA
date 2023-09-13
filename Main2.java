@@ -9,11 +9,7 @@ public class Main2
     double Damage = 3.5;
     System.out.println("DMG:" + Damage);
     
-    boolean onFire = false;
-    System.out.println(onFire);
-    
     final boolean Hazards = true;
-    System.out.println(Hazards);
-    
+    System.out.println("Hazards:" + Hazards);    
   }
 }

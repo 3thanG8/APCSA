@@ -1,4 +1,4 @@
-public class Main13
+public class Main
 {
   public static void main(String[] args)
   {
@@ -23,5 +23,14 @@ public class Main13
     
     double onFireDMG = Health * 0.02;
     System.out.println("Health after Burn:" +(Health - onFireDMG));
+    
+    try 
+    {
+      System.out.println(1/0);
+    }
+    catch(ArithmeticException e)
+    {
+      System.out.println(e);
+    }
   }
 }

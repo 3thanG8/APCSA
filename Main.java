@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main
 {
   public static void main(String[] args)
@@ -31,6 +32,11 @@ public class Main
     catch(ArithmeticException e)
     {
       System.out.println(e);
-    }
+    } 
+    System.out.println("What's your name?");
+    Scanner scan = new Scanner(System.in);
+    String name = scan.nextLine();
+    System.out.println("Let's being your adventure " + name);
+    for(int i = 0;i <= 2;i++){System.out.println(i);}
   }
 }

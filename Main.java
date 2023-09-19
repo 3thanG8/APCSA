@@ -33,10 +33,31 @@ public class Main
     {
       System.out.println(e);
     } 
+    
     System.out.println("What's your name?");
     Scanner scan = new Scanner(System.in);
     String name = scan.nextLine();
     System.out.println("Let's being your adventure " + name);
-    for(int i = 0;i <= 2;i++){System.out.println(i);}
+    scan.close();
+   
+    Scanner number = new Scanner(System.in);
+    System.out.println("Number 1: ");
+    int number1 = number.nextInt();
+    
+    Scanner num = new Scanner(System.in);
+    System.out.println("Number 2: ");
+    int number2 = num.nextInt();
+    number.close();
+    num.close();
+    try
+    {
+      System.out.println(number1*number2/0);
+    }
+    catch(ArithmeticException a)
+    {
+      System.out.println(a);
+    }
+    for(int i = 0;i <= 2;i++){System.out.println(i);
+  }
   }
 }

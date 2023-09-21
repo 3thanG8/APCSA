@@ -7,14 +7,6 @@ public class Main
     double num2 = 0.5;
     System.out.println((double) num1/num2);
     
-    try
-    {
-    int overflow = 2147483650;
-    System.out.println(overflow);
-    }
-    catch (ArithmeticException over){
-    System.out.print.ln(over);
-    }
     System.out.println("Hello, world");
     System.out.println("I am your computer");
   
@@ -69,6 +61,8 @@ public class Main
     {
       System.out.println(a);
     }
+    int overflow = Integer.MAX_VALUE;
+    System.out.println(overflow + 1);
     for(int i = 0;i <= 2;i++){System.out.println(i);
     }
   }

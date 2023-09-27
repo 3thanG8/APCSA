@@ -68,23 +68,36 @@
 //  }
 //}
 
-public class Main
-{
-  public static void main(String[] args)
-  {
-    Enemy slime = new Enemy();
+//public class Main
+//{
+//  public static void main(String[] args)
+//  {
+//    Enemy slime = new Enemy();
+//    
+//    double playerHP = 100.0;
+//    int playerDMG = 10;
+//    
+//    System.out.println("You encounter a slime!");
+//    System.out.println("It has " + slime.hpLeft() + " HP");
+//    System.out.println("It has " + slime.dmgPOW() + " DMG");
+//    
+//    playerHP -= slime.atk();
+//    System.out.println("You have " + playerHP + " HP left");
+//    
+//    System.out.println("You fight back!");
+//    System.out.print("The slime has " + (slime.hpLeft() - (double) playerDMG) + " HP left");
+//  }
+//}
+
+public class Main {
+  public static void main(String[] args) {
+    Keyboard board1 = new Keyboard("steel", "blue", 115.0);
+
+   board1.getKeyboard();
+  
     
-    double playerHP = 100.0;
-    int playerDMG = 10;
-    
-    System.out.println("You encounter a slime!");
-    System.out.println("It has " + slime.hpLeft() + " HP");
-    System.out.println("It has " + slime.dmgPOW() + " DMG");
-    
-    playerHP -= slime.atk();
-    System.out.println("You have " + playerHP + " HP left");
-    
-    System.out.println("You fight back!");
-    System.out.print("The slime has " + (slime.hpLeft() - (double) playerDMG) + " HP left");
+    Keyboard board2 = new Keyboard("steel", "red");
+   board2.getKeyboard();  
   }
 }
+    

@@ -97,8 +97,7 @@ public class Main {
     Keyboard board1 = new Keyboard("steel", "blue", 115.0);
 
    board1.getKeyboard();
-  
-    
+
     Keyboard board2 = new Keyboard("steel", "red");
    board2.getKeyboard();  
   }

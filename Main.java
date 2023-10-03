@@ -91,28 +91,28 @@
 //  }
 //}
 
-// 9/26/23
-public class Main {
-  public static void main(String[] args) {
-    Keyboard board1 = new Keyboard("steel", "blue", 115.0);
-
-   board1.getKeyboard();
-  
-    
-    Keyboard board2 = new Keyboard("steel", "red");
-   board2.getKeyboard(); 
+//9/26/23
+//public class Main {
+//  public static void main(String[] args) {
+//    Keyboard board1 = new Keyboard("steel", "blue", 115.0);
+//
+//   board1.getKeyboard();
+//  
+//    
+//    Keyboard board2 = new Keyboard("steel", "red");
+//   board2.getKeyboard(); 
 // 9/30/23
-   Keyboard getAlt = null;
-   getAlt.getKeyboard();
-  }
-}
+//   Keyboard getAlt = null;
+//   getAlt.getKeyboard();
+//  }
+//}
 
 //10/3/23
 public class Main {
   public static void main(String[] args) {
     Person person = new Person("The answer to the question is: ", 1);
-    Person person2 = new Person("The answer to the question is: ", 1);
+    Person person2 = new Person("The answer to the question: ");
     person.talk(3);
-    person2.talk(3, 0.0);
+    person2.talk(3, 5);
   }
 }

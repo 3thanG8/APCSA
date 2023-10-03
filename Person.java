@@ -20,13 +20,10 @@ public class Person {
   }
   
   public void talk(int a) {
-    numone += a;
-    System.out.println(getWords() + getFirst());
+    System.out.println(getWords() + (getFirst() + a));
   }
   
-  public void talk(int a, double b) {
-    numone += a;
-    a += b;
-    System.out.println(getWords() + b);
+  public void talk(int a, int b) {
+    System.out.println(getWords() + (a + b));
   }
 }

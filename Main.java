@@ -110,7 +110,9 @@ public class Main {
 //10/3/23
 public class Main {
   public static void main(String[] args) {
-    Talk person = new Talk("The answer to the question is: " + 1);
-    person.add(3);
+    Person person = new Person("The answer to the question is: ", 1);
+    Person person2 = new Person("The answer to the question is: ", 1);
+    person.talk(3);
+    person2.talk(3, 0.0);
   }
 }

@@ -106,4 +106,10 @@ public class Main {
    getAlt.getKeyboard();
   }
 }
-    
+
+public class Main {
+  public static void main(String[] args) {
+    Talk person = new Talk("The answer to the question is: " + 1);
+    person.add(3);
+  }
+}

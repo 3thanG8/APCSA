@@ -116,3 +116,15 @@ public class Main {
     person2.talk(3, 5);
   }
 }
+
+//10/10/23
+public class Main {
+  public static void main(String[] args) {
+    Profile p = new Profile(17, "Ethan");
+    p.agesince2023(0);
+    p.getProfile();
+    int age = getAge();
+    System.out.println("Ethan's age times 2 is " + getAge() * 2);
+  }
+}
+    

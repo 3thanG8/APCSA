@@ -123,8 +123,8 @@ public class Main {
     Profile p = new Profile(17, "Ethan");
     p.agesince2023(0);
     p.getProfile();
-    int age = getAge();
-    System.out.println("Ethan's age times 2 is " + getAge() * 2);
+    int age = p.getAge();
+    System.out.println("Ethan's age times 2 is " + age * 2);
   }
 }
     

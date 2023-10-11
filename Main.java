@@ -108,14 +108,14 @@
 //}
 
 //10/3/23
-public class Main {
-  public static void main(String[] args) {
-    Person person = new Person("The answer to the question is: ", 1);
-    Person person2 = new Person("The answer to the question: ");
-    person.talk(3);
-    person2.talk(3, 5);
-  }
-}
+//public class Main {
+//  public static void main(String[] args) {
+//    Person person = new Person("The answer to the question is: ", 1);
+//    Person person2 = new Person("The answer to the question: ");
+//    person.talk(3);
+//    person2.talk(3, 5);
+//  }
+//}
 
 //10/10/23
 public class Main {

@@ -140,7 +140,7 @@ public class Main {
     Scanner scan2 = new Scanner(System.in);
     int age = scan.nextInt();
     
-    System.out.println("\"Hi! My name is " + name + " and I am " + age + " years old\"" );
+    System.out.println(name + " says:" + "\"Hi! My name is " + name + " and I am " + age + " years old\"" );
     scan.close();
     scan2.close();
   }

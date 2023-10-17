@@ -118,13 +118,30 @@
 //}
 
 //10/10/23
+//public class Main {
+//  public static void main(String[] args) {
+//    Profile p = new Profile(17, "Ethan");
+//    p.agesince2023(0);
+//    p.getProfile();
+//    int age = p.getAge();
+//    System.out.println("Ethan's age times 2 is " + age * 2);
+//  }
+//}
+
+//10/17/23
+import java.util.Scanner;
 public class Main {
   public static void main(String[] args) {
-    Profile p = new Profile(17, "Ethan");
-    p.agesince2023(0);
-    p.getProfile();
-    int age = p.getAge();
-    System.out.println("Ethan's age times 2 is " + age * 2);
+    System.out.println("What is your name?");
+    Scanner scan = new Scanner(System.in);
+    String name = scan.nextLine();
+    
+    System.out.println("How old are you?");
+    Scanner scan2 = new Scanner(System.in);
+    int age = scan.nextInt();
+    
+    System.out.println("\"Hi! My name is " + name + " and I am " + age + " years old\"" );
+    scan.close();
+    scan2.close();
   }
 }
-    

@@ -149,7 +149,7 @@
 // 10/19/23
 public class Main {
   public static void main(String[] args) {
-    Person person = new Person();
+    Hello person = new Hello();
     System.out.println(person + " My name is Ethan");
     String test = new String("Hi");
     System.out.println(test.length());

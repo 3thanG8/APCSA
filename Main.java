@@ -129,19 +129,29 @@
 //}
 
 //10/17/23
-import java.util.Scanner;
+//import java.util.Scanner;
+//public class Main {
+//  public static void main(String[] args) {
+//    System.out.println("What is your name?");
+//    Scanner scan = new Scanner(System.in);
+//    String name = scan.nextLine();
+//    
+//    System.out.println("How old are you?");
+//    Scanner scan2 = new Scanner(System.in);
+//    int age = scan.nextInt();
+//    
+//    System.out.println(name + " says:" + "\"Hi! My name is " + name + " and I am " + age + " years old\"" );
+//    scan.close();
+//    scan2.close();
+//  }
+//}
+
+// 10/19/23
 public class Main {
   public static void main(String[] args) {
-    System.out.println("What is your name?");
-    Scanner scan = new Scanner(System.in);
-    String name = scan.nextLine();
-    
-    System.out.println("How old are you?");
-    Scanner scan2 = new Scanner(System.in);
-    int age = scan.nextInt();
-    
-    System.out.println(name + " says:" + "\"Hi! My name is " + name + " and I am " + age + " years old\"" );
-    scan.close();
-    scan2.close();
+    Person person = new Person();
+    System.out.println(person + " My name is Ethan");
+    String test = new String("Hi");
+    System.out.println(test.length());
   }
 }

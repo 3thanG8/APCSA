@@ -147,11 +147,18 @@
 //}
 
 // 10/19/23
+//public class Main {
+//  public static void main(String[] args) {
+//    Hello person = new Hello();
+//    System.out.println(person + " My name is Ethan");
+//    String test = new String("Hi");
+//    System.out.println(test.length());
+//  }
+//}
+
+//10/30/23
 public class Main {
   public static void main(String[] args) {
-    Hello person = new Hello();
-    System.out.println(person + " My name is Ethan");
-    String test = new String("Hi");
-    System.out.println(test.length());
+    System.out.println((int) (Math.random() * 4 + 1)*2);
   }
 }

@@ -164,18 +164,28 @@
 //}
 
 // 11/1/23
+//public class Main {
+//  public static void main(String[] args) {
+//    int a = 5;
+//    int b = 6;
+//    System.out.println(a <= b);
+//    
+//    boolean weekend = true;
+//    if (weekend) {
+//      System.out.println("It's the weekend!!");
+//    }
+//    else {
+//    System.out.println("It's still the weekdays :(");
+//    }
+//  }
+//}
+
+// 11/9/23
 public class Main {
   public static void main(String[] args) {
-    int a = 5;
-    int b = 6;
-    System.out.println(a <= b);
-    
-    boolean weekend = true;
-    if (weekend) {
-      System.out.println("It's the weekend!!");
-    }
-    else {
-    System.out.println("It's still the weekdays :(");
-    }
+    int b = 10 + 5;
+    if (b >= 20) System.out.println("Integer b is less than or equal to 20!");
+    else if (b == 15) System.out.println("Integer b is equal to 15");
+    else System.out.println("Integer b is less than 15");
   }
 }

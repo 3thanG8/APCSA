@@ -181,11 +181,21 @@
 //}
 
 // 11/9/23
+//public class Main {
+//  public static void main(String[] args) {
+//    int b = 10 + 5;
+//    if (b >= 20) System.out.println("Integer b is less than or equal to 20!");
+//    else if (b == 15) System.out.println("Integer b is equal to 15");
+//    else System.out.println("Integer b is less than 15");
+//  }
+//}
+
+// 11/14/23
 public class Main {
   public static void main(String[] args) {
-    int b = 10 + 5;
-    if (b >= 20) System.out.println("Integer b is less than or equal to 20!");
-    else if (b == 15) System.out.println("Integer b is equal to 15");
-    else System.out.println("Integer b is less than 15");
+    boolean a = true;
+    boolean b = false;
+    System.out.println(!a || b);
+    System.out.println(a && !b);
   }
 }

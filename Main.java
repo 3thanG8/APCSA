@@ -191,11 +191,20 @@
 //}
 
 // 11/14/23
+//public class Main {
+//  public static void main(String[] args) {
+//    boolean a = true;
+//    boolean b = false;
+//    System.out.println(!a || b);
+//    System.out.println(a && !b);
+//  }
+//}
+
+// 1/17/23
 public class Main {
   public static void main(String[] args) {
-    boolean a = true;
-    boolean b = false;
-    System.out.println(!a || b);
-    System.out.println(a && !b);
+    Equals c = new Equals();
+    System.out.println(c.equals(2, 2));
   }
 }
+    

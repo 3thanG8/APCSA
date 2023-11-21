@@ -208,3 +208,15 @@ public class Main {
   }
 }
     
+public class Main {
+  public static void main(String[] args) {
+    System.out.println(Algorithm.divisibleBy2ndNUM(3, 4));
+  }
+}
+
+public class Algorithm {
+  public static boolean divisibleBy2ndNUM(int i, int x) {
+      if (i%2 == 0) return true;
+      return false;
+  }
+}

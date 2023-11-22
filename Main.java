@@ -210,13 +210,44 @@ public class Main {
     
 public class Main {
   public static void main(String[] args) {
-    System.out.println(Algorithm.divisibleBy2ndNUM(3, 4));
+    System.out.println("Is 3 divisible by 4: " + Algorithm.divisibleBy2ndNUM(3, 4));
+    System.out.println("Is 9 divisible by 3: " + Algorithm.divisibleBy2ndNUM(9, 3));
+    System.out.println("Is 10 divisible by 5: " + Algorithm.divisibleBy2ndNUM(10, 5));
+    
+    System.out.println("The number 987654321 has " + Algorithm.digits(987654321) + " digits");
+    System.out.println("The number -12 has " + Algorithm.digits(-12) + " digits");
+    System.out.println("The number 0 has " + Algorithm.digits(0) + " digits");
+    
+    System.out.println("The sum of the odd numbers between 4 and 9, inclusive are: " + Algorithm.oddNums(4, 9));
+    System.out.println("The sum of the odd numbers between 50 and 12, inclusive are: " + Algorithm.oddNums(50, 12));
+    System.out.println("The sum of the odd numbers between 6 and 7, inclusive are: " + Algorithm.oddNums(6, 7));
   }
 }
 
 public class Algorithm {
   public static boolean divisibleBy2ndNUM(int i, int x) {
-      if (i%2 == 0) return true;
-      return false;
+    if (i%x == 0) return true;
+    return false;
+  }
+  public static int digits(int i) {
+    int x = 0;
+    if (i == 0) return 1;
+    while (Math.abs(i) > 0) {
+      i = i/10;
+      x++;
+    }
+    return x;
+  }
+  public static int oddNums(int i, int x) {
+    int sum = 0;
+    while (i%2 == 1) {
+      i--;
+      sum += i;
+    }
+    while (x%2 == 1) {
+      x--;
+      sum += x;
+    }
+    return sum;
   }
 }

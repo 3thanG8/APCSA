@@ -231,11 +231,12 @@ public class Main {
     System.out.println("The sum of the numbers in 12 is: " + Algorithm.paraSum(12));
     System.out.println("The sum of the numbers in 54321 is: " + Algorithm.paraSum(54321));
     
-    System.out.println("The largest power of two less than or equal to 800 is: " + Algorithm.pwrTwo(321));
+    System.out.println("The largest power of two less than or equal to 800 is: " + Algorithm.pwrTwo(800));
     System.out.println("The largest power of two less than or equal to 17 is: " + Algorithm.pwrTwo(17));
     System.out.println("The largest power of two less than or equal to 0 is: " + Algorithm.pwrTwo(0));
   }
 }
+
 
 
 public class Algorithm {
@@ -284,15 +285,18 @@ public class Algorithm {
   }
   
   public static int pwrTwo(int i) { //The largest power of two less than or equal to a positive parameter
-    int a = 0;
-    if (i < 1) {
-      return 0;
+    int result = 0;
+    for(int a = i; a >= 1; a--)
+    {
+        if ((a & (a-1)) == 0)
+        {
+            result = a;
+            break;
+        }
     }
-    else {
-      for (int x = i; x >= 1; x--)
-        if ((x%2 == 0) {
-        a = x;
-      
+    return result;
+  }
+}
             
             
             

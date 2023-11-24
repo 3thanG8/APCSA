@@ -219,17 +219,18 @@ public class Main {
     System.out.println("The number 0 has " + Algorithm.digits(0) + " digits");
     
     System.out.println("The sum of the odd numbers between 4 and 9, inclusive are: " + Algorithm.oddNums(4, 9));
-    System.out.println("The sum of the odd numbers between 50 and 12, inclusive are: " + Algorithm.oddNums(50, 12));
+    System.out.println("The sum of the odd numbers between 0 and 3, inclusive are: " + Algorithm.oddNums(0, 3));
     System.out.println("The sum of the odd numbers between 6 and 7, inclusive are: " + Algorithm.oddNums(6, 7));
   }
 }
 
 public class Algorithm {
-  public static boolean divisibleBy2ndNUM(int i, int x) {
+  public static boolean divisibleBy2ndNUM(int i, int x) { //Whether the first integer is divisible by the second
     if (i%x == 0) return true;
     return false;
   }
-  public static int digits(int i) {
+  
+  public static int digits(int i) { //The number of digits in the parameter
     int x = 0;
     if (i == 0) return 1;
     while (Math.abs(i) > 0) {
@@ -238,15 +239,14 @@ public class Algorithm {
     }
     return x;
   }
-  public static int oddNums(int i, int x) {
-    int sum = 0;
-    while (i%2 == 1) {
-      i--;
-      sum += i;
-    }
-    while (x%2 == 1) {
-      x--;
-      sum += x;
+  
+  public static int oddNums(int i, int x) { //The sum of all odd numbers between the first parameter and the second, inclusive
+    int sum = 0; 
+    for (int num = i; num <= x; num++)
+    {
+      if (num%2 == 1) {
+        sum = sum + num;
+      }
     }
     return sum;
   }

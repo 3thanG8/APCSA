@@ -222,15 +222,29 @@ public class Main {
     System.out.println("The sum of the odd numbers between 4 and 9, inclusive are: " + Algorithm.oddNums(4, 9));
     System.out.println("The sum of the odd numbers between 50 and 12, inclusive are: " + Algorithm.oddNums(50, 12));
     System.out.println("The sum of the odd numbers between 6 and 7, inclusive are: " + Algorithm.oddNums(6, 7));
+    
+    System.out.println("The sum of all multiples of ten between 10 and 99, inclusive are: " + Algorithm.tensNums(10, 99));
+    System.out.println("The sum of the multiples of ten between 2 and 3, inclusive are: " + Algorithm.tensNums(2, 3));
+    System.out.println("The sum of the multiples of ten between 1 and 10, inclusive are: " + Algorithm.tensNums(1, 10));
+    
+    System.out.println("The sum of the numbers in 321 is: " + Algorithm.paraSum(321));
+    System.out.println("The sum of the numbers in 12 is: " + Algorithm.paraSum(12));
+    System.out.println("The sum of the numbers in 54321 is: " + Algorithm.paraSum(54321));
+    
+    System.out.println("The largest power of two less than or equal to 800 is: " + Algorithm.pwrTwo(321));
+    System.out.println("The largest power of two less than or equal to 17 is: " + Algorithm.pwrTwo(17));
+    System.out.println("The largest power of two less than or equal to 0 is: " + Algorithm.pwrTwo(0));
   }
 }
 
+
 public class Algorithm {
-  public static boolean divisibleBy2ndNUM(int i, int x) {
+  public static boolean divisibleBy2ndNUM(int i, int x) { //Whether the first integer is divisible by the second
     if (i%x == 0) return true;
     return false;
   }
-  public static int digits(int i) {
+  
+  public static int digits(int i) { //The number of digits in the parameter
     int x = 0;
     if (i == 0) return 1;
     while (Math.abs(i) > 0) {
@@ -239,16 +253,47 @@ public class Algorithm {
     }
     return x;
   }
-  public static int oddNums(int i, int x) {
-    int sum = 0;
-    while (i%2 == 1) {
-      i--;
-      sum += i;
-    }
-    while (x%2 == 1) {
-      x--;
-      sum += x;
+  
+  public static int oddNums(int i, int x) { //The sum of all odd numbers between the first parameter and the second, inclusive
+    int sum = 0; 
+    for (int num = i; num <= x; num++)
+    {
+      if (num%2 == 1) {
+        sum = sum + num;
+      }
     }
     return sum;
   }
-}
+  
+  public static int tensNums(int i, int x) { //The sum of all multiples of ten between the first parameter and the second, inclusive
+    int sum = 0; 
+    for (int num = i; num <= x; num++)
+    {
+      if (num%10 == 0) {
+        sum = sum + num;
+      }
+    }
+    return sum;
+  }
+  
+  public static int paraSum(int i) { //The sum of the parameter's digits
+    int sum = 0;
+    for (sum = 0; i != 0; i=i/10)
+      sum += i%10;
+    return sum;
+  }
+  
+  public static int pwrTwo(int i) { //The largest power of two less than or equal to a positive parameter
+    int a = 0;
+    if (i < 1) {
+      return 0;
+    }
+    else {
+      for (int x = i; x >= 1; x--)
+        if ((x%2 == 0) {
+        a = x;
+      
+            
+            
+            
+            

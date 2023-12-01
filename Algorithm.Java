@@ -59,7 +59,11 @@ public class Algorithm {
 }
 
 // 11/30/23
-public static boolean secondInFirst(string a, string b) { //Whether the second string occurs in the first.
+public class Algorithm {
+  public static boolean secondInFirst(String a, String b) { //Whether the second string occurs in the first.
     return a.indexOf(b) != -1;
   }
+  
+  public static String reverse(String a) {
+    
 }

@@ -235,6 +235,14 @@ public class Main {
     System.out.println("The largest power of two less than or equal to 17 is: " + Algorithm.pwrTwo(17));
     System.out.println("The largest power of two less than or equal to 0 is: " + Algorithm.pwrTwo(0));
   }
+    public class Main {
+  public static void main(String[] args) {
+    System.out.println("Is \"World\" in \"Hello World\": " + Algorithm.secondInFirst("Hello World", "World"));
+    System.out.println("Is \"potato\" in \"potatwah\": " + Algorithm.secondInFirst("potatwah", "potato"));
+    System.out.println("Is \"gatos\" in \"Los gatos\": " + Algorithm.secondInFirst("Los gatos", "gatos"));
+  }
+}
+           
 }
 
 
@@ -296,6 +304,7 @@ public class Algorithm {
     }
     return result;
   }
+    
 }
             
             

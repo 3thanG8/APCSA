@@ -48,22 +48,48 @@ public class Algorithm {
     int result = 0;
     for(int a = i; a >= 1; a--)
     {
-        if ((a & (a-1)) == 0)
-        {
-            result = a;
-            break;
-        }
+      if ((a & (a-1)) == 0)
+      {
+        result = a;
+        break;
+      }
     }
     return result;
   }
-}
-
+  
 // 11/30/23
-public class Algorithm {
   public static boolean secondInFirst(String a, String b) { //Whether the second string occurs in the first.
     return a.indexOf(b) != -1;
   }
   
-  public static String reverse(String a) {
-    
+  public static String reverse(String a) { //A string with the characters of the parameter reversed.
+    if (a == null) {
+      return a;
+    }
+    String b = "";
+    for (int i = a.length() - 1; i >= 0; i--) {
+      b = b + a.charAt(i);
+    }
+    return b;
+  }
+  
+  public static boolean palindrome(String a) { //Whether the parameter is a palindrome
+    String b = "";
+    for (int i = a.length() - 1; i >= 0; i--) {
+      b = b + a.charAt(i);
+    }
+    return a.indexOf(b) != -1;
+  }
+  
+  public static int occOfSecInFirst(String a, String b) {//The number of occurrences of the second parameter in the first
+    int x = 0;
+    int index = a.indexOf(b);
+    while (index >= 0) {
+      x++;
+      index = a.indexOf(b, index + 1);
+    }
+    return x;
+  }
 }
+
+

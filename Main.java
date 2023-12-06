@@ -242,3 +242,14 @@ public class Main {
     System.out.println("Is \"gatos\" in \"Los gatos\": " + Algorithm.secondInFirst("Los gatos", "gatos"));
   }
 }
+
+    public class Main { // 12/7/23
+  public static void main(String[]args) {  
+    for (int i = 0; i < 3; i++) {
+      for (int x = 5; x > 0; x--) {
+        System.out.println("Beep");
+      }
+      System.out.println();
+    }
+  }
+}

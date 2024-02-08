@@ -1,4 +1,5 @@
 // 11/28/23
+import java.lang.Math;
 public class Algorithm {
   public static boolean divisibleBy2ndNUM(int i, int x) { //Whether the first integer is divisible by the second
     if (i%x == 0) return true;
@@ -90,6 +91,151 @@ public class Algorithm {
     }
     return x;
   }
+  
+// 2/6/24 - 6.4 Developing Algorithms using Arrays
+  public static void printArray(int[] ints) { //Prints the elements of the array
+    for (int i : ints)
+      System.out.print(i + " ");
+  }
+  
+  public static void swapIndex(int[] ints, int a, int b) { //Swaps the elements at the indicies indicated by the parameters
+    int temp = ints[a];
+    ints[a] = ints[b];
+    ints[b] = temp;
+  }
+  
+  public static int findMax(int[] ints) { //Returns the maximum of the array
+    int max = ints[0];
+    for (int i = 1; i < ints.length; i++) {
+      if (ints[i] > max) {
+        max = ints[i];
+      }
+    }
+    return max;
+  }
+  
+  public static int findMin(int[] ints) { //Returns the minimum of the array
+    int min = ints[0];
+    for (int i = 1; i < ints.length; i++) {
+      if (ints[i] < min) {
+        min = ints[i];
+      }
+    }
+    return min;
+  }
+  
+  public static String findShortest(String[] str) { //Returns the shortest string in the array
+    String s = str[0];
+    for (int i = 1; i < str.length; i++) {
+      if (str[i].length() < s.length()) {
+        s = str[i];
+      }
+    }
+    return s;
+  }
+  
+  public static String findLongest(String[] str) { //Returns the longest string in the array
+    String s = str[0];
+    for (int i = 1; i < str.length; i++) {
+      if (str[i].length() > s.length()) {
+        s = str[i];
+      }
+    }
+    return s;
+  }
+  
+  public static int findAbsDiff(int[] in, int[] ints) { //Returns the largest absolute difference between two corresponding elements of the arrays
+    int diff = 0;
+    for (int i = 0; i < in.length; i++) {
+      int d = Math.abs(in[i] - ints[i]); 
+      if (d > diff) {
+        diff = d;
+      }
+    }
+    return diff;
+  }
+  
+  public static double findMean(double[] doubles) { //Returns the mean average of the array
+    double mean = 0.0;
+    for (int i = 0; i < doubles.length; i++)
+      mean += doubles[i];
+    return mean/(doubles.length);
+  }
+  
+  public static void reverseOrder(int[] ints) { //Reverses the order of the elements of the array without making a copy
+    int start = 0;
+    int end = ints.length-1;
+    while (start < end) {
+      int a = ints[start];
+      ints[start] = ints[end];
+      ints[end] = a;
+      start++;
+      end--;
+    }
+    for (int i = 0; i < ints.length; i++)
+      System.out.print(ints[i] + " ");   
+  }
+  
+  public static boolean findConsValues(int[] ints) { //Returns whether the array contains two consecutive equivalent values
+    boolean val = false;
+    for (int i = 0; i < ints.length-1; i++) {
+      if (ints[i] == ints[i+1]) {
+        val = true;
+      }
+    }
+    return val;
+  }
+  
+  public static int findNeg(int[] ints) { //Returns the index of the first negative value in the array, -1 otherwise
+    int index = -1;
+    for (int i = 0; i < ints.length; i++) {
+      if (ints[i] < 0) {
+        index = i;
+      }
+    }
+    return index;
+  }
+  
+  public static boolean findEqual(int[] ints) { //Returns whether the array contains two equivalent values
+    for (int i = 0; i < ints.length - 1; i++) {
+      for (int a = i + 1; a < ints.length; a++) {
+        if (ints[i] == ints[a]) {
+          return true;
+        }
+      }
+    }
+  return false;
+  }
+  
+  public static int findLongestStreak(int[] ints, int a) { //Returns the length of the longest consecutive streak of the int parameter
+    int streak = 1;
+    for (int i = 0; i < ints.length-1; i++) {
+      if (ints[i] == a && ints[i] == ints[i+1]) {
+        streak++;
+      }
+    }
+    if (streak == 1) return 0;
+    else return streak;
+  }
+  
+  public static String findAlphabet(String[] str) { //Returns the word that occurs last alphabetically.
+    String s = str[0];
+    for (int i = 1; i < str.length; i++) {
+      if (str[i].compareTo(s) > 0) {
+        s = str[i];
+      }
+    }
+    return s;
+  }
+  
+  public static boolean findIdentical(int[] ints, int[] a) { //Returns whether or not the two arrays contain any identical values
+    for (int i = 0; i < ints.length; i++) {
+      for (int b = 0; b < a.length; b++) {
+        if (ints[i] == a[b]) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
 }
-
-

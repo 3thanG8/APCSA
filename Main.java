@@ -253,3 +253,139 @@ public class Main {
     }
   }
 }
+
+// 2/7/24
+public class Main {
+  public static void main(String[]args) {
+    int[] ints = {1,2,3};
+    int[] i = {1};
+    int[] a = {3,2,1};
+    Algorithm.printArray(ints); 
+    Algorithm.printArray(i);
+    Algorithm.printArray(a);
+    
+    int[] b = {1,2,3,4};
+    int[] c = {5,2};
+    int[] d = {0,1,2,3};
+    Algorithm.swapIndex(b, 1, 2); //Test 1
+    System.out.print("\n");
+    for (int s : b)
+      System.out.print(s + " ");
+    Algorithm.swapIndex(c, 0, 1); //Test 2
+    System.out.print("\n");
+    for (int s : c)
+      System.out.print(s + " ");
+    Algorithm.swapIndex(d, 0, 3); //Test 3
+    System.out.print("\n");
+    for (int s : d)
+      System.out.print(s + " ");
+    
+    int[] e = {3,2,1};
+    int[] f = {1,2,3};
+    int[] g = {10, 100, 5};
+    System.out.print("\n");
+    System.out.print(Algorithm.findMax(e));
+    System.out.print(" " + Algorithm.findMax(f));
+    System.out.print(" " + Algorithm.findMax(g));
+    
+    int[] h = {3,2,1};
+    int[] j = {1,2,3};
+    int[] k = {10, 100, 5};
+    System.out.print("\n");
+    System.out.print(Algorithm.findMin(h));
+    System.out.print(" " + Algorithm.findMin(j));
+    System.out.print(" " + Algorithm.findMin(k));
+    
+    String[] st = {"Hello,", "world", "!"};
+    String[] str = {"hi", "a", "buy"};
+    String[] stri = {"abcd", "no", "yes"};
+    System.out.print("\n");
+    System.out.print(Algorithm.findShortest(st));
+    System.out.print(" " + Algorithm.findShortest(str));
+    System.out.print(" " + Algorithm.findShortest(stri));
+    
+    String[] strin = {"Hello,", "world", "!"};
+    String[] strings = {"hi", "a", "buy"};
+    String[] string = {"abcd", "no", "yes"};
+    System.out.print("\n");
+    System.out.print(Algorithm.findLongest(strin));
+    System.out.print(" " + Algorithm.findLongest(strings));
+    System.out.print(" " + Algorithm.findLongest(string));
+    
+    int[] abc = {2,3,4};
+    int[] cba = {-1,-2,-3};
+    int[] bac = {100, -1000, 10};
+    int[] acb = {5, -5, 10};
+    System.out.print("\n");
+    System.out.print(Algorithm.findAbsDiff(abc, cba));
+    System.out.print(" " + Algorithm.findAbsDiff(abc, bac));
+    System.out.print(" " + Algorithm.findAbsDiff(abc, acb));
+    
+    double[] ab = {2.0, 3.0, 4.0, 5.0};
+    double[] ba = {1.0, 5.0, 3.5};
+    double[] nap = {6.5, 10.0, 5.5, 7.5, 2.5};
+    System.out.print("\n");
+    System.out.print(Algorithm.findMean(ab));
+    System.out.print(" " + Algorithm.findMean(ba));
+    System.out.print(" " + Algorithm.findMean(nap));
+    
+    int[] map = {1,2,3};
+    int[] pam = {3,2,1};
+    int[] mpa = {5,2,6,3,1};
+    System.out.print("\n");
+    Algorithm.reverseOrder(map);
+    System.out.print("\n");
+    Algorithm.reverseOrder(pam);
+    System.out.print("\n");
+    Algorithm.reverseOrder(mpa);
+    
+    int[] bub = {1,2,3,3,4};
+    int[] ubb = {1,2,3,4,5};
+    int[] bbu = {1,2,3,2,4};
+    System.out.print("\n");
+    System.out.print(Algorithm.findConsValues(bub));
+    System.out.print(" " + Algorithm.findConsValues(ubb));
+    System.out.print(" " + Algorithm.findConsValues(bbu));
+    
+    int[] nob = {1,0,-1};
+    int[] bon = {1,2,4,5};
+    int[] obn = {1,-2,3,-2,4};
+    System.out.print("\n");
+    System.out.print(Algorithm.findNeg(nob));
+    System.out.print(" " + Algorithm.findNeg(bon));
+    System.out.print(" " + Algorithm.findNeg(obn));
+    
+    int[] bob = {1,2,3,2};
+    int[] boo = {1,2,3,4};
+    int[] bop = {4,3,2,4};
+    System.out.print("\n");
+    System.out.print(Algorithm.findEqual(bob));
+    System.out.print(" " + Algorithm.findEqual(boo));
+    System.out.print(" " + Algorithm.findEqual(bop));
+    
+    int[] pop = {1,2,1,1,1};
+    int[] poo = {2,3,5,4,5};
+    int[] pob = {5,5,5,5,5};
+    System.out.print("\n");
+    System.out.print(Algorithm.findLongestStreak(pop,1));
+    System.out.print(" " + Algorithm.findLongestStreak(poo,6));
+    System.out.print(" " + Algorithm.findLongestStreak(pob,5));
+    
+    String[] aaa = {"zebra", "alpha"};
+    String[] bbb = {"alpha", "bad"};
+    String[] ccc = {"sad", "happy"};
+    System.out.print("\n");
+    System.out.print(Algorithm.findAlphabet(aaa));
+    System.out.print(" " + Algorithm.findAlphabet(bbb));
+    System.out.print(" " + Algorithm.findAlphabet(ccc));
+    
+    int[] first = {1,2};
+    int[] second = {3,4};
+    int[] third = {5,1};
+    int[] fourth = {3,2};
+    System.out.print("\n");
+    System.out.print(Algorithm.findIdentical(first,second));
+    System.out.print(" " + Algorithm.findIdentical(second,third));
+    System.out.print(" " + Algorithm.findIdentical(first,fourth));
+  }
+}

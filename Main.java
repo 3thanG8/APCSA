@@ -389,3 +389,49 @@ public class Main {
     System.out.print(" " + Algorithm.findIdentical(first,fourth));
   }
 }
+
+import java.util.ArrayList;
+public class Main {
+  public static void main(String[]args) {
+    ArrayList<Integer> list = new ArrayList<Integer>();
+    list.add(1);
+    list.add(2);
+    list.add(2);
+    list.add(3);
+    list.add(3);
+    System.out.print("Before Removal: " + list);
+    System.out.print("\n");
+    Algorithm.removeDuplicate(list);    
+    System.out.print("After Removal: " + list);
+    
+    ArrayList<Integer> l = new ArrayList<Integer>();
+    l.add(1);
+    l.add(2);
+    l.add(3);
+    System.out.print("\n");
+    System.out.print("Before Removal: " + l);
+    System.out.print("\n");
+    Algorithm.removeDuplicate(l);    
+    System.out.print("After Removal: " + l);
+    
+    ArrayList<Integer> li = new ArrayList<Integer>();
+    li.add(1);
+    li.add(2);
+    li.add(2);
+    System.out.print("\n");
+    System.out.print("Before Removal: " + li);
+    System.out.print("\n");
+    Algorithm.removeDuplicate(li);    
+    System.out.print("After Removal: " + li);
+    
+    ArrayList<Integer> lis = new ArrayList<Integer>();
+    lis.add(1);
+    lis.add(2);
+    lis.add(2);
+    lis.add(3);
+    lis.add(3);
+    System.out.print("\n");
+    Algorithm.removeInt(lis,2);
+    System.out.print(lis);
+  }
+}

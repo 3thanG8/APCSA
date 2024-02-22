@@ -1,5 +1,6 @@
 // 11/28/23
 import java.lang.Math;
+import java.util.ArrayList;
 public class Algorithm {
   public static boolean divisibleBy2ndNUM(int i, int x) { //Whether the first integer is divisible by the second
     if (i%x == 0) return true;
@@ -204,7 +205,7 @@ public class Algorithm {
         }
       }
     }
-  return false;
+    return false;
   }
   
   public static int findLongestStreak(int[] ints, int a) { //Returns the length of the longest consecutive streak of the int parameter
@@ -237,5 +238,30 @@ public class Algorithm {
       }
     }
     return false;
+  }
+
+// 2/27/24
+  public static void removeDuplicate(ArrayList<Integer> list) { //Removes all duplicate consecutive elements from the ArrayList
+    int i = 0;
+    while (i < list.size() - 1) {
+      if (list.get(i).equals(list.get(i+1))) {
+        list.remove(i);
+      }
+      else {
+        i++;
+      }
+    }
+  }
+  
+  public static void removeInt(ArrayList<Integer> list, int i) { //Removes all instances of the int parameter in the ArrayList
+    int a = 0;
+    while (a < list.size()-1) {
+      if (list.get(a).equals(i)) {
+        list.remove(a);
+      }
+      else {
+        a++;
+      }
+    }
   }
 }

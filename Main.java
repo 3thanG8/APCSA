@@ -393,37 +393,34 @@ public class Main {
 import java.util.ArrayList;
 public class Main {
   public static void main(String[]args) {
+    // Removes all duplicate consecutive elements from the ArrayList
     ArrayList<Integer> list = new ArrayList<Integer>();
     list.add(1);
     list.add(2);
     list.add(2);
     list.add(3);
     list.add(3);
-    System.out.print("Before Removal: " + list);
     System.out.print("\n");
     Algorithm.removeDuplicate(list);    
-    System.out.print("After Removal: " + list);
+    System.out.print(list);
     
     ArrayList<Integer> l = new ArrayList<Integer>();
     l.add(1);
     l.add(2);
     l.add(3);
     System.out.print("\n");
-    System.out.print("Before Removal: " + l);
-    System.out.print("\n");
     Algorithm.removeDuplicate(l);    
-    System.out.print("After Removal: " + l);
+    System.out.print(l);
     
     ArrayList<Integer> li = new ArrayList<Integer>();
     li.add(1);
     li.add(2);
     li.add(2);
     System.out.print("\n");
-    System.out.print("Before Removal: " + li);
-    System.out.print("\n");
     Algorithm.removeDuplicate(li);    
-    System.out.print("After Removal: " + li);
+    System.out.print(li);
     
+    // Removes all instances of the int parameter in the ArrayList
     ArrayList<Integer> lis = new ArrayList<Integer>();
     lis.add(1);
     lis.add(2);
@@ -433,5 +430,114 @@ public class Main {
     System.out.print("\n");
     Algorithm.removeInt(lis,2);
     System.out.print(lis);
+    
+    ArrayList<Integer> a = new ArrayList<Integer>();
+    a.add(0);
+    a.add(1);
+    a.add(0);
+    a.add(1);
+    System.out.print("\n");
+    Algorithm.removeInt(a,0);
+    System.out.print(a);
+    
+    ArrayList<Integer> b = new ArrayList<Integer>();
+    b.add(5);
+    b.add(5);
+    b.add(5);
+    b.add(5);
+    System.out.print("\n");
+    Algorithm.removeInt(b,5);
+    System.out.print(b);
+    
+    //Adds the int parameter to an ArrayList in ascending order to an appropriate index
+    ArrayList<Integer> c = new ArrayList<Integer>();
+    c.add(1);
+    c.add(2);
+    c.add(2);
+    c.add(3);
+    c.add(3);
+    System.out.print("\n");
+    Algorithm.addInt(c,4);
+    System.out.print(c);
+    
+    ArrayList<Integer> d = new ArrayList<Integer>();
+    d.add(1);
+    d.add(2);
+    d.add(3);
+    d.add(2);
+    d.add(5);
+    System.out.print("\n");
+    Algorithm.addInt(d,4);
+    System.out.print(d);
+    
+    ArrayList<Integer> e = new ArrayList<Integer>();
+    e.add(1);
+    e.add(20);
+    e.add(5);
+    e.add(2);
+    e.add(13);
+    System.out.print("\n");
+    Algorithm.addInt(e,10);
+    System.out.print(e);
+    
+    //Returns whether or not the ArrayLists are in reverse order of each other
+    ArrayList<Integer> f = new ArrayList<Integer>();
+    ArrayList<Integer> g = new ArrayList<Integer>();
+    f.add(1);
+    f.add(2);
+    f.add(3);
+    g.add(3);
+    g.add(2);
+    g.add(1);
+    System.out.print("\n");
+    System.out.print(Algorithm.checkRev(f,g));
+    
+    g.remove(1);
+    System.out.print("\n");
+    System.out.print(Algorithm.checkRev(f,g));
+    
+    f.remove(1);
+    System.out.print("\n");
+    System.out.print(Algorithm.checkRev(f,g));
+    
+    //Returns the maximum of the ArrayList
+    ArrayList<Integer> h = new ArrayList<Integer>();
+    h.add(3);
+    h.add(2);
+    h.add(1);
+    System.out.print("\n");
+    System.out.print("Max: " + Algorithm.getMax(h));
+    
+    h.remove(0);
+    System.out.print("\n");
+    System.out.print("Max: " + Algorithm.getMax(h));
+    
+    ArrayList<Integer> i = new ArrayList<Integer>();
+    i.add(5);
+    i.add(10);
+    i.add(2);
+    System.out.print("\n");
+    System.out.print("Max: " + Algorithm.getMax(i));
+    
+    //Returns the minimum of the ArrayList
+    ArrayList<Integer> j = new ArrayList<Integer>();
+    j.add(3);
+    j.add(2);
+    j.add(1);
+    System.out.print("\n");
+    System.out.print("Min: " + Algorithm.getMin(j));
+    
+    j.remove(2);
+    System.out.print("\n");
+    System.out.print("Min: " + Algorithm.getMin(j));
+    
+    ArrayList<Integer> k = new ArrayList<Integer>();
+    k.add(10);
+    k.add(0);
+    k.add(5);
+    System.out.print("\n");
+    System.out.print("Min: " + Algorithm.getMin(k));
+    
+    //Returns the shortest string in the ArrayList
   }
 }

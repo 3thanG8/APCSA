@@ -307,5 +307,13 @@ public class Algorithm {
   }
   
   public static String getShortest(ArrayList<String> strings) {//Returns the shortest string in the ArrayList
-    
+    int a = strings.get(0).length();
+    String str = "";
+    for (int i = 0; i < strings.size(); i++) {
+      if (a > strings.get(i).length()) {
+        str = strings.get(i);
+      }
+    }
+    return str;
+  }
 }

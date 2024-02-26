@@ -264,4 +264,48 @@ public class Algorithm {
       }
     }
   }
+  
+  public static void addInt(ArrayList<Integer> list, int i) { //Adds the int parameter to an ArrayList in ascending order to an appropriate index
+    int index = 0;
+    while (index < list.size() && list.get(index) < i) {
+      index++;
+    }
+    list.add(index, i);
+  }
+  
+  public static boolean checkRev(ArrayList<Integer> a, ArrayList<Integer> b) { //Returns whether or not the ArrayLists are in reverse order of each other
+    if (a.size() != b.size()) {
+      return false;
+    }
+    int size = a.size();
+    for (int i = 0; i < size; i++) {
+      if (!a.get(i).equals(b.get(size-1-i))) {
+        return false;
+      }
+    }
+    return true;
+  }
+  
+  public static int getMax(ArrayList<Integer> list) { //Returns the maximum of the ArrayList
+    int a = list.get(0);
+    for (int i = 0; i < list.size(); i++) {
+      if (a < list.get(i)) {
+        a = list.get(i);
+      }
+    }
+    return a;
+  }
+  
+  public static int getMin(ArrayList<Integer> list) { //Returns the minimum of the ArrayList
+    int a = list.get(0);
+    for (int i = 0; i < list.size(); i++) {
+      if (a > list.get(i)) {
+        a = list.get(i);
+      }
+    }
+    return a;
+  }
+  
+  public static String getShortest(ArrayList<String> strings) {//Returns the shortest string in the ArrayList
+    
 }

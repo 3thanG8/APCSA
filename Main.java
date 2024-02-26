@@ -539,5 +539,25 @@ public class Main {
     System.out.print("Min: " + Algorithm.getMin(k));
     
     //Returns the shortest string in the ArrayList
+    ArrayList<String> strings = new ArrayList<String>();
+    strings.add("Hello");
+    strings.add("world");
+    strings.add("!");
+    System.out.print("\n");
+    System.out.print("Shortest: " + Algorithm.getShortest(strings));
+    
+    ArrayList<String> strs = new ArrayList<String>();
+    strs.add("Hola");
+    strs.add("poo");
+    strs.add("p");
+    System.out.print("\n");
+    System.out.print("Shortest: " + Algorithm.getShortest(strs));
+    
+    ArrayList<String> s = new ArrayList<String>();
+    s.add("supercalifragilisticexpialidocious");
+    s.add("supe");
+    s.add("peeper");
+    System.out.print("\n");
+    System.out.print("Shortest: " + Algorithm.getShortest(s));
   }
 }

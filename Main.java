@@ -390,6 +390,7 @@ public class Main {
   }
 }
 
+// 2/26/24
 import java.util.ArrayList;
 public class Main {
   public static void main(String[]args) {
@@ -540,7 +541,7 @@ public class Main {
     
     //Returns the shortest string in the ArrayList
     ArrayList<String> strings = new ArrayList<String>();
-    strings.add("Hello");
+    strings.add("Hello,");
     strings.add("world");
     strings.add("!");
     System.out.print("\n");
@@ -556,8 +557,175 @@ public class Main {
     ArrayList<String> s = new ArrayList<String>();
     s.add("supercalifragilisticexpialidocious");
     s.add("supe");
-    s.add("peeper");
+    s.add("peers");
     System.out.print("\n");
     System.out.print("Shortest: " + Algorithm.getShortest(s));
+    
+    //Returns the longest string in the ArrayList
+    ArrayList<String> str = new ArrayList<String>();
+    str.add("Hello,");
+    str.add("world");
+    str.add("!");
+    System.out.print("\n");
+    System.out.print("Longest: " + Algorithm.getLongest(str));
+    
+    ArrayList<String> aaa = new ArrayList<String>();
+    aaa.add("strings");
+    aaa.add("str");
+    aaa.add("s");
+    System.out.print("\n");
+    System.out.print("Longest: " + Algorithm.getLongest(aaa));
+    
+    ArrayList<String> aba = new ArrayList<String>();
+    aba.add("scoot");
+    aba.add("soup");
+    aba.add("superior");
+    System.out.print("\n");
+    System.out.print("Longest: " + Algorithm.getLongest(aba));
+    
+    //Returns the largest absolute difference between two corresponding elements of the ArrayLists
+    ArrayList<Integer> abb = new ArrayList<Integer>();
+    abb.add(2);
+    abb.add(3);
+    abb.add(4);
+    ArrayList<Integer> bbb = new ArrayList<Integer>();
+    bbb.add(-1);
+    bbb.add(-2);
+    bbb.add(-3);
+    System.out.print("\n");
+    System.out.print("Largest abs diff: " + Algorithm.getDifference(abb,bbb));
+    
+    ArrayList<Integer> baa = new ArrayList<Integer>();
+    baa.add(-20);
+    baa.add(-10);
+    baa.add(-5);
+    System.out.print("\n");
+    System.out.print("Largest abs diff: " + Algorithm.getDifference(baa,abb));
+    
+    ArrayList<Integer> bba = new ArrayList<Integer>();
+    bba.add(3);
+    bba.add(12);
+    bba.add(-13);
+    System.out.print("\n");
+    System.out.print("Largest abs diff: " + Algorithm.getDifference(bba,abb));
+    
+    //Returns the mean average of the ArrayList
+    ArrayList<Double> doubles = new ArrayList<Double>();
+    doubles.add(1.5);
+    doubles.add(3.5);
+    doubles.add(5.5);
+    System.out.print("\n");
+    System.out.print("Mean: " + Algorithm.getMean(doubles));
+    
+    doubles.add(10.0);
+    System.out.print("\n");
+    System.out.print("Mean: " + Algorithm.getMean(doubles));
+    
+    ArrayList<Double> doubs = new ArrayList<Double>();
+    doubs.add(1.4);
+    doubs.add(2.7);
+    doubs.add(5.25);
+    System.out.print("\n");
+    System.out.print("Mean: " + Algorithm.getMean(doubs));
+    
+    //Reverses the elements of the ArrayList
+    ArrayList<Integer> mmm = new ArrayList<Integer>();
+    mmm.add(1);
+    mmm.add(2);
+    mmm.add(3);
+    System.out.print("\n");
+    Algorithm.reverseList(mmm);
+    System.out.print(mmm);
+    
+    ArrayList<Integer> mma = new ArrayList<Integer>();
+    mma.add(7);
+    mma.add(10);
+    mma.add(10);
+    System.out.print("\n");
+    Algorithm.reverseList(mma);
+    System.out.print(mma);
+    
+    ArrayList<Integer> maa = new ArrayList<Integer>();
+    maa.add(2);
+    maa.add(5);
+    maa.add(4);
+    System.out.print("\n");
+    Algorithm.reverseList(maa);
+    System.out.print(maa);
+    
+    //Returns whether the ArrayList contains two consecutive equivalent values
+    ArrayList<Integer> hhh = new ArrayList<Integer>();
+    hhh.add(1);
+    hhh.add(2);
+    hhh.add(3);
+    hhh.add(3);
+    hhh.add(4);
+    System.out.print("\n");
+    System.out.print("Has consecutive values: " + Algorithm.consecutiveVals(hhh));
+    
+    ArrayList<Integer> hha = new ArrayList<Integer>();
+    hha.add(1);
+    hha.add(2);
+    hha.add(3);
+    hha.add(5);
+    hha.add(4);
+    System.out.print("\n");
+    System.out.print("Has consecutive values: " + Algorithm.consecutiveVals(hha));
+    
+    ArrayList<Integer> haa = new ArrayList<Integer>();
+    haa.add(2);
+    haa.add(2);
+    haa.add(3);
+    haa.add(5);
+    haa.add(5);
+    System.out.print("\n");
+    System.out.print("Has consecutive values: " + Algorithm.consecutiveVals(haa));
+    
+    //Returns the index of the first negative value in the ArrayList, -1 otherwise
+    ArrayList<Integer> qqq = new ArrayList<Integer>();
+    qqq.add(1);
+    qqq.add(0);
+    qqq.add(-1);
+    System.out.print("\n");
+    System.out.print("Index of first negative: " + Algorithm.indexOfFirstNeg(qqq));
+    
+    ArrayList<Integer> qa = new ArrayList<Integer>();
+    qa.add(1);
+    qa.add(0);
+    qa.add(2);
+    System.out.print("\n");
+    System.out.print("Index of first negative: " + Algorithm.indexOfFirstNeg(qa));
+    
+    ArrayList<Integer> qb = new ArrayList<Integer>();
+    qb.add(-1);
+    qb.add(-3);
+    qb.add(-1);
+    System.out.print("\n");
+    System.out.print("Index of first negative: " + Algorithm.indexOfFirstNeg(qb));
+    
+    //Returns whether the ArrayList contains two equivalent values
+    ArrayList<Integer> www = new ArrayList<Integer>();
+    www.add(1);
+    www.add(2);
+    www.add(3);
+    www.add(2);
+    System.out.print("\n");
+    System.out.print("Has two equivalent values: " + Algorithm.equalVals(www));
+    
+    ArrayList<Integer> ww = new ArrayList<Integer>();
+    ww.add(1);
+    ww.add(2);
+    ww.add(3);
+    ww.add(4);
+    System.out.print("\n");
+    System.out.print("Has two equivalent values: " + Algorithm.equalVals(ww));
+    
+    ArrayList<Integer> w = new ArrayList<Integer>();
+    w.add(1);
+    w.add(2);
+    w.add(3);
+    w.add(1);
+    System.out.print("\n");
+    System.out.print("Has two equivalent values: " + Algorithm.equalVals(w));
   }
 }

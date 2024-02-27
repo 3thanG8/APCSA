@@ -239,7 +239,7 @@ public class Algorithm {
     }
     return false;
   }
-
+  
 // 2/27/24
   public static void removeDuplicate(ArrayList<Integer> list) { //Removes all duplicate consecutive elements from the ArrayList
     int i = 0;
@@ -306,14 +306,90 @@ public class Algorithm {
     return a;
   }
   
-  public static String getShortest(ArrayList<String> strings) {//Returns the shortest string in the ArrayList
+  public static String getShortest(ArrayList<String> strings) { //Returns the shortest string in the ArrayList
     int a = strings.get(0).length();
     String str = "";
     for (int i = 0; i < strings.size(); i++) {
       if (a > strings.get(i).length()) {
+        a = strings.get(i).length();
         str = strings.get(i);
       }
     }
     return str;
+  }
+  
+  public static String getLongest(ArrayList<String> list) { //Returns the longest string in the ArrayList
+    int a = list.get(0).length();
+    String str = list.get(0);
+    for (int i = 0; i < list.size(); i++) {
+      if (a < list.get(i).length()) {
+        a = list.get(i).length();
+        str = list.get(i);
+      }
+    }
+    return str;
+  }
+  
+  public static int getDifference(ArrayList<Integer> list1, ArrayList<Integer> list2) {// Returns the largest absolute difference between two corresponding elements of the ArrayLists
+    int diff = 0;
+    for (int i = 0; i < list1.size(); i++) {
+      for (int a = 0; a < list2.size(); a++) {
+        if (Math.abs(list1.get(i)-list2.get(a)) > diff) {
+          diff = Math.abs(list1.get(i)-list2.get(a));
+        }
+      }
+    }
+    return diff;
+  }
+  
+  public static double getMean(ArrayList<Double> list) { // Returns the mean average of the ArrayList
+    double sum = 0.0;
+    for (int i = 0; i < list.size(); i++) { 
+      sum += list.get(i);
+    }
+    return sum/list.size();
+  }
+  
+  public static void reverseList(ArrayList<Integer> list) {// Reverses the elements of the ArrayList
+    int size = list.size();
+    for (int i = 0; i < list.size()/2; i++) {
+      int temp = list.get(i);
+      list.set(i, list.get(size - i - 1));
+      list.set(size - i - 1, temp);
+    }
+  }
+  
+  public static boolean consecutiveVals(ArrayList<Integer> list) { //Returns whether the ArrayList contains two consecutive equivalent values
+    boolean cons = false;
+    for (int i = 0; i < list.size()-1; i++) {
+      if (list.get(i).equals(list.get(i+1))) {
+        cons = true;
+      }
+    }
+    return cons;
+  }
+  
+  public static int indexOfFirstNeg(ArrayList<Integer> list) { //Returns the index of the first negative value in the ArrayList, -1 otherwise
+    int a = -1;
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i) < 0) {
+        a = i;
+        return a;
+      }
+    }
+   return a;
+  }
+  
+  public static boolean equalVals(ArrayList<Integer> list) { //Returns whether the ArrayList contains two equivalent values
+    for (int i = 0; i < list.size(); i++) {
+      int first = list.get(i);
+      for (int j = i + 1; j < list.size(); j++) {
+        int val = list.get(j);
+        if (first == val) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 }

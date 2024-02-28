@@ -392,4 +392,57 @@ public class Algorithm {
     }
     return false;
   }
+  
+  // 2/27/24
+  public static int lessThanZero(ArrayList<Integer> list) { //Returns the number of elements in the ArrayList less than zero
+    int count = 0;
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i) < 0) {
+        count++;
+      }
+    }
+    return count;
+  }
+  
+  public static boolean foundIn(ArrayList<String> list, String str) { //Returns true if the String is found in the ArrayList and false otherwise
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i).equals(str)) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  public static boolean sameVal(ArrayList<Integer> list1, ArrayList<Integer> list2) { //Returns true if the same value appears in both ArrayLists and false otherwise
+    for (int i = 0; i < list1.size(); i++) {
+      for (int j = 0; j < list2.size(); j++) {
+        if (list1.get(i) == list2.get(j)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+  
+  public static int firstInd(ArrayList<Integer> list, int a) { //Returns the index of the first appearance of the int in the list or -1 if it does not appear in the list.
+    int index = 0;
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i) == a) {
+        index = i;
+        return index;
+      }
+    }
+    return -1;
+  }
+  
+  public static int firstApp(int[] list, int a) { //Returns the index of the first appearance of the int in the array or -1 if it does not appear in the array.
+    int index = 0;
+    for (int i = 0; i < list.length; i++) {
+      if (list[i] == a) {
+        index = i;
+        return index;
+      }
+    }
+    return -1;
+  }
 }

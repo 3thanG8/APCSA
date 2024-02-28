@@ -729,3 +729,95 @@ public class Main {
     System.out.print("Has two equivalent values: " + Algorithm.equalVals(w));
   }
 }
+
+// 2/27/24
+import java.util.ArrayList;
+public class Main { 
+  public static void main(String[]args) {
+    //Returns the number of elements in the ArrayList less than zero
+    ArrayList<Integer> ints = new ArrayList<Integer>();
+    ints.add(-1);
+    ints.add(0);
+    ints.add(1);
+    System.out.println(Algorithm.lessThanZero(ints));
+    
+    ArrayList<Integer> a = new ArrayList<Integer>();
+    a.add(-1);
+    a.add(-6);
+    a.add(-1);
+    System.out.println(Algorithm.lessThanZero(a));
+    
+    ArrayList<Integer> b = new ArrayList<Integer>();
+    b.add(121);
+    b.add(4);
+    b.add(12);
+    System.out.println(Algorithm.lessThanZero(b));
+    
+    //Returns true if the String is found in the ArrayList and false otherwise
+    ArrayList<String> strings = new ArrayList<String>();
+    strings.add("String");
+    System.out.println(Algorithm.foundIn(strings, "string"));
+    
+    ArrayList<String> str = new ArrayList<String>();
+    str.add("apple");
+    System.out.println(Algorithm.foundIn(str, "Apple"));
+    
+    ArrayList<String> s = new ArrayList<String>();
+    s.add("banana");
+    System.out.println(Algorithm.foundIn(s, "banana"));
+    
+    //Returns true if the same value appears in both ArrayLists and false otherwise
+    ArrayList<Integer> aaa = new ArrayList<Integer>();
+    ArrayList<Integer> bbb = new ArrayList<Integer>();
+    aaa.add(1);
+    aaa.add(2);
+    bbb.add(2);
+    bbb.add(3);
+    System.out.println(Algorithm.sameVal(aaa,bbb));
+    
+    ArrayList<Integer> aa = new ArrayList<Integer>();
+    ArrayList<Integer> bb = new ArrayList<Integer>();
+    aa.add(4);
+    aa.add(2);
+    bb.add(6);
+    bb.add(3);
+    System.out.println(Algorithm.sameVal(aa,bb));
+    
+    ArrayList<Integer> ab = new ArrayList<Integer>();
+    ArrayList<Integer> ba = new ArrayList<Integer>();
+    ab.add(4);
+    ab.add(4);
+    ba.add(4);
+    ba.add(4);
+    System.out.println(Algorithm.sameVal(ab,ba));
+    
+    //Returns the index of the first appearance of the int in the list or -1 if it does not appear in the list.
+    ArrayList<Integer> aba = new ArrayList<Integer>();
+    aba.add(1);
+    aba.add(2);
+    aba.add(3);
+    System.out.println(Algorithm.firstInd(aba, 2));
+    
+    ArrayList<Integer> baa = new ArrayList<Integer>();
+    baa.add(1);
+    baa.add(10);
+    baa.add(4);
+    System.out.println(Algorithm.firstInd(baa, 0));
+    
+    ArrayList<Integer> bab = new ArrayList<Integer>();
+    bab.add(15);
+    bab.add(15);
+    bab.add(15);
+    System.out.println(Algorithm.firstInd(bab, 15));
+    
+    //Return the index of the first appearance of the int in the array or -1 if it does not appear in the array.
+    int[] zzz = {1,2,3};
+    System.out.println(Algorithm.firstApp(zzz,2));
+    
+    int[] zz = {1,1,1};
+    System.out.println(Algorithm.firstApp(zz,10));
+    
+    int[] z = {1, 5, 3};
+    System.out.println(Algorithm.firstApp(z,3));
+  }
+}

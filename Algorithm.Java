@@ -445,4 +445,14 @@ public class Algorithm {
     }
     return -1;
   }
-}
+  
+  // 2/28/24
+  public static void alphaSelectionSort(String[] list) { //The array sorted alphabetically with selection sort
+    for (int i = 0; i < list.length; i++) {
+      list[i] = list[i].toLowerCase();
+      for (int a = 0; a < list.length + 1; a++) {
+        while (list[a].compareTo.list[a+1] > 0) {
+          int index 
+    
+    
+   

@@ -6,7 +6,7 @@ public class Algorithm {
     if (i%x == 0) return true;
     return false;
   }
-  
+
   public static int digits(int i) { //The number of digits in the parameter
     int x = 0;
     if (i == 0) return 1;
@@ -16,7 +16,7 @@ public class Algorithm {
     }
     return x;
   }
-  
+
   public static int oddNums(int i, int x) { //The sum of all odd numbers between the first parameter and the second, inclusive
     int sum = 0; 
     for (int num = i; num <= x; num++)
@@ -27,7 +27,7 @@ public class Algorithm {
     }
     return sum;
   }
-  
+
   public static int tensNums(int i, int x) { //The sum of all multiples of ten between the first parameter and the second, inclusive
     int sum = 0; 
     for (int num = i; num <= x; num++)
@@ -38,14 +38,14 @@ public class Algorithm {
     }
     return sum;
   }
-  
+
   public static int paraSum(int i) { //The sum of the parameter's digits
     int sum = 0;
     for (sum = 0; i != 0; i=i/10)
       sum += i%10;
     return sum;
   }
-  
+
   public static int pwrTwo(int i) { //The largest power of two less than or equal to a positive parameter
     int result = 0;
     for(int a = i; a >= 1; a--)
@@ -58,12 +58,12 @@ public class Algorithm {
     }
     return result;
   }
-  
+
 // 11/30/23
   public static boolean secondInFirst(String a, String b) { //Whether the second string occurs in the first.
     return a.indexOf(b) != -1;
   }
-  
+
   public static String reverse(String a) { //A string with the characters of the parameter reversed.
     if (a == null) {
       return a;
@@ -74,7 +74,7 @@ public class Algorithm {
     }
     return b;
   }
-  
+
   public static boolean palindrome(String a) { //Whether the parameter is a palindrome
     String b = "";
     for (int i = a.length() - 1; i >= 0; i--) {
@@ -82,7 +82,7 @@ public class Algorithm {
     }
     return a.indexOf(b) != -1;
   }
-  
+
   public static int occOfSecInFirst(String a, String b) {//The number of occurrences of the second parameter in the first
     int x = 0;
     int index = a.indexOf(b);
@@ -92,19 +92,19 @@ public class Algorithm {
     }
     return x;
   }
-  
+
 // 2/6/24 - 6.4 Developing Algorithms using Arrays
   public static void printArray(int[] ints) { //Prints the elements of the array
     for (int i : ints)
       System.out.print(i + " ");
   }
-  
+
   public static void swapIndex(int[] ints, int a, int b) { //Swaps the elements at the indicies indicated by the parameters
     int temp = ints[a];
     ints[a] = ints[b];
     ints[b] = temp;
   }
-  
+
   public static int findMax(int[] ints) { //Returns the maximum of the array
     int max = ints[0];
     for (int i = 1; i < ints.length; i++) {
@@ -114,7 +114,7 @@ public class Algorithm {
     }
     return max;
   }
-  
+
   public static int findMin(int[] ints) { //Returns the minimum of the array
     int min = ints[0];
     for (int i = 1; i < ints.length; i++) {
@@ -124,7 +124,7 @@ public class Algorithm {
     }
     return min;
   }
-  
+
   public static String findShortest(String[] str) { //Returns the shortest string in the array
     String s = str[0];
     for (int i = 1; i < str.length; i++) {
@@ -134,7 +134,7 @@ public class Algorithm {
     }
     return s;
   }
-  
+
   public static String findLongest(String[] str) { //Returns the longest string in the array
     String s = str[0];
     for (int i = 1; i < str.length; i++) {
@@ -144,7 +144,7 @@ public class Algorithm {
     }
     return s;
   }
-  
+
   public static int findAbsDiff(int[] in, int[] ints) { //Returns the largest absolute difference between two corresponding elements of the arrays
     int diff = 0;
     for (int i = 0; i < in.length; i++) {
@@ -155,14 +155,14 @@ public class Algorithm {
     }
     return diff;
   }
-  
+
   public static double findMean(double[] doubles) { //Returns the mean average of the array
     double mean = 0.0;
     for (int i = 0; i < doubles.length; i++)
       mean += doubles[i];
     return mean/(doubles.length);
   }
-  
+
   public static void reverseOrder(int[] ints) { //Reverses the order of the elements of the array without making a copy
     int start = 0;
     int end = ints.length-1;
@@ -176,7 +176,7 @@ public class Algorithm {
     for (int i = 0; i < ints.length; i++)
       System.out.print(ints[i] + " ");   
   }
-  
+
   public static boolean findConsValues(int[] ints) { //Returns whether the array contains two consecutive equivalent values
     boolean val = false;
     for (int i = 0; i < ints.length-1; i++) {
@@ -186,7 +186,7 @@ public class Algorithm {
     }
     return val;
   }
-  
+
   public static int findNeg(int[] ints) { //Returns the index of the first negative value in the array, -1 otherwise
     int index = -1;
     for (int i = 0; i < ints.length; i++) {
@@ -196,7 +196,7 @@ public class Algorithm {
     }
     return index;
   }
-  
+
   public static boolean findEqual(int[] ints) { //Returns whether the array contains two equivalent values
     for (int i = 0; i < ints.length - 1; i++) {
       for (int a = i + 1; a < ints.length; a++) {
@@ -207,7 +207,7 @@ public class Algorithm {
     }
     return false;
   }
-  
+
   public static int findLongestStreak(int[] ints, int a) { //Returns the length of the longest consecutive streak of the int parameter
     int streak = 1;
     for (int i = 0; i < ints.length-1; i++) {
@@ -218,7 +218,7 @@ public class Algorithm {
     if (streak == 1) return 0;
     else return streak;
   }
-  
+
   public static String findAlphabet(String[] str) { //Returns the word that occurs last alphabetically.
     String s = str[0];
     for (int i = 1; i < str.length; i++) {
@@ -228,7 +228,7 @@ public class Algorithm {
     }
     return s;
   }
-  
+
   public static boolean findIdentical(int[] ints, int[] a) { //Returns whether or not the two arrays contain any identical values
     for (int i = 0; i < ints.length; i++) {
       for (int b = 0; b < a.length; b++) {
@@ -239,7 +239,7 @@ public class Algorithm {
     }
     return false;
   }
-  
+
 // 2/27/24
   public static void removeDuplicate(ArrayList<Integer> list) { //Removes all duplicate consecutive elements from the ArrayList
     int i = 0;
@@ -252,7 +252,7 @@ public class Algorithm {
       }
     }
   }
-  
+
   public static void removeInt(ArrayList<Integer> list, int i) { //Removes all instances of the int parameter in the ArrayList
     int a = 0;
     while (a < list.size()-1) {
@@ -264,7 +264,7 @@ public class Algorithm {
       }
     }
   }
-  
+
   public static void addInt(ArrayList<Integer> list, int i) { //Adds the int parameter to an ArrayList in ascending order to an appropriate index
     int index = 0;
     while (index < list.size() && list.get(index) < i) {
@@ -272,7 +272,7 @@ public class Algorithm {
     }
     list.add(index, i);
   }
-  
+
   public static boolean checkRev(ArrayList<Integer> a, ArrayList<Integer> b) { //Returns whether or not the ArrayLists are in reverse order of each other
     if (a.size() != b.size()) {
       return false;
@@ -285,7 +285,7 @@ public class Algorithm {
     }
     return true;
   }
-  
+
   public static int getMax(ArrayList<Integer> list) { //Returns the maximum of the ArrayList
     int a = list.get(0);
     for (int i = 0; i < list.size(); i++) {
@@ -295,7 +295,7 @@ public class Algorithm {
     }
     return a;
   }
-  
+
   public static int getMin(ArrayList<Integer> list) { //Returns the minimum of the ArrayList
     int a = list.get(0);
     for (int i = 0; i < list.size(); i++) {
@@ -305,7 +305,7 @@ public class Algorithm {
     }
     return a;
   }
-  
+
   public static String getShortest(ArrayList<String> strings) { //Returns the shortest string in the ArrayList
     int a = strings.get(0).length();
     String str = "";
@@ -317,7 +317,7 @@ public class Algorithm {
     }
     return str;
   }
-  
+
   public static String getLongest(ArrayList<String> list) { //Returns the longest string in the ArrayList
     int a = list.get(0).length();
     String str = list.get(0);
@@ -329,7 +329,7 @@ public class Algorithm {
     }
     return str;
   }
-  
+
   public static int getDifference(ArrayList<Integer> list1, ArrayList<Integer> list2) {// Returns the largest absolute difference between two corresponding elements of the ArrayLists
     int diff = 0;
     for (int i = 0; i < list1.size(); i++) {
@@ -341,7 +341,7 @@ public class Algorithm {
     }
     return diff;
   }
-  
+
   public static double getMean(ArrayList<Double> list) { // Returns the mean average of the ArrayList
     double sum = 0.0;
     for (int i = 0; i < list.size(); i++) { 
@@ -349,7 +349,7 @@ public class Algorithm {
     }
     return sum/list.size();
   }
-  
+
   public static void reverseList(ArrayList<Integer> list) {// Reverses the elements of the ArrayList
     int size = list.size();
     for (int i = 0; i < list.size()/2; i++) {
@@ -358,7 +358,7 @@ public class Algorithm {
       list.set(size - i - 1, temp);
     }
   }
-  
+
   public static boolean consecutiveVals(ArrayList<Integer> list) { //Returns whether the ArrayList contains two consecutive equivalent values
     boolean cons = false;
     for (int i = 0; i < list.size()-1; i++) {
@@ -368,7 +368,7 @@ public class Algorithm {
     }
     return cons;
   }
-  
+
   public static int indexOfFirstNeg(ArrayList<Integer> list) { //Returns the index of the first negative value in the ArrayList, -1 otherwise
     int a = -1;
     for (int i = 0; i < list.size(); i++) {
@@ -379,7 +379,7 @@ public class Algorithm {
     }
    return a;
   }
-  
+
   public static boolean equalVals(ArrayList<Integer> list) { //Returns whether the ArrayList contains two equivalent values
     for (int i = 0; i < list.size(); i++) {
       int first = list.get(i);
@@ -392,7 +392,7 @@ public class Algorithm {
     }
     return false;
   }
-  
+
   // 2/27/24
   public static int lessThanZero(ArrayList<Integer> list) { //Returns the number of elements in the ArrayList less than zero
     int count = 0;
@@ -403,7 +403,7 @@ public class Algorithm {
     }
     return count;
   }
-  
+
   public static boolean foundIn(ArrayList<String> list, String str) { //Returns true if the String is found in the ArrayList and false otherwise
     for (int i = 0; i < list.size(); i++) {
       if (list.get(i).equals(str)) {
@@ -412,7 +412,7 @@ public class Algorithm {
     }
     return false;
   }
-  
+
   public static boolean sameVal(ArrayList<Integer> list1, ArrayList<Integer> list2) { //Returns true if the same value appears in both ArrayLists and false otherwise
     for (int i = 0; i < list1.size(); i++) {
       for (int j = 0; j < list2.size(); j++) {
@@ -423,7 +423,7 @@ public class Algorithm {
     }
     return false;
   }
-  
+
   public static int firstInd(ArrayList<Integer> list, int a) { //Returns the index of the first appearance of the int in the list or -1 if it does not appear in the list.
     int index = 0;
     for (int i = 0; i < list.size(); i++) {
@@ -434,7 +434,7 @@ public class Algorithm {
     }
     return -1;
   }
-  
+
   public static int firstApp(int[] list, int a) { //Returns the index of the first appearance of the int in the array or -1 if it does not appear in the array.
     int index = 0;
     for (int i = 0; i < list.length; i++) {
@@ -445,14 +445,113 @@ public class Algorithm {
     }
     return -1;
   }
-  
+
   // 2/28/24
+  public static void printStr(String[] arr)
+  {
+    String str = "[";
+    for(int i = 0; i < arr.length - 1; i++)
+      str += arr[i] + ", ";
+    str += arr[arr.length - 1] + "]";
+    System.out.println(str);
+  }
+
+  public static void printInt(int[] arr)
+  {
+    String str = "[";
+    for(int i = 0; i < arr.length - 1; i++)
+      str += arr[i] + ", ";
+    str += arr[arr.length - 1] + "]";
+    System.out.println(str);
+  }
+  
   public static void alphaSelectionSort(String[] list) { //The array sorted alphabetically with selection sort
-    for (int i = 0; i < list.length; i++) {
-      list[i] = list[i].toLowerCase();
-      for (int a = 0; a < list.length + 1; a++) {
-        while (list[a].compareTo.list[a+1] > 0) {
-          int index 
-    
-    
-   
+    int a = list.length;
+    for (int i = 0; i < a - 1; i++) {
+      int first = i;
+      for (int j = i + 1; j < a; j++) {
+        if ((list[j].compareTo(list[first]) < 0)) {
+          first = j;
+        }
+      }
+      if (first != i) {
+        String temp = list[i];
+        list[i] = list[first];
+        list[first] = temp;
+      }
+    }
+  }
+
+  public static void alphaInsertionSort(String[] list) { //The array sorted alphabetically with insertion sort
+    int a = list.length;
+    for (int i = 1; i < a; i++) {
+      String first = list[i];
+      int j = i - 1;
+      while (j >= 0 && list[j].compareTo(first) > 0) {
+      list[j+1] = list[j];
+      j = j-1;
+    }
+    list[j+1] = first;
+    }
+  }
+
+  public static void alphaSelectionSortList(ArrayList<String> list) { //The array sorted alphabetically with selection sort
+    int a = list.size();
+    for (int i = 0; i < a - 1; i++) {
+      int first = i;
+      for (int j = i + 1; j < a; j++) {
+        if ((list.get(j).compareTo(list.get(first)) < 0)) {
+          first = j;
+        }
+      }
+      if (first != i) {
+        String temp = list.get(i);
+        list.set(i, list.get(first));
+        list.set(first, temp);
+      }
+    }
+  }
+
+  public static void alphaInsertionSortList(ArrayList<String> list) { //The ArrayList sorted alphabetically with insertion sort
+    int a = list.size();
+    for (int i = 1; i < a; i++) {
+      String first = list.get(i);
+      int j = i - 1;
+      while (j >= 0 && list.get(j).compareTo(first) > 0) {
+      list.set(j+1, list.get(j));
+      j = j-1;
+    }
+    list.set(j+1, first);
+    }
+  }
+
+  public static void ascendingSelectionSortList(ArrayList<Integer> list) {
+    int n = list.size();
+    for (int i = 0; i < n - 1; i++) {
+      int first = i;
+      for (int j = i + 1; j < n; j++) {
+        if (list.get(j) < list.get(first)) {
+            first = j;
+          }
+        }
+        if (first != i) {
+          int temp = list.get(i);
+          list.set(i, list.get(first));
+          list.set(first, temp);
+        }
+    }
+  }
+
+  public static void ascendingInsertionSortList(ArrayList<Integer> list) {
+    int n = list.size();
+    for (int i = 1; i < n; ++i) {
+      int first = list.get(i);
+      int j = i - 1;
+      while (j >= 0 && list.get(j) > first) {
+          list.set(j + 1, list.get(j));
+          j = j - 1;
+      }
+    list.set(j + 1, first);
+    }
+  }
+}

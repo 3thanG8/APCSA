@@ -821,3 +821,123 @@ public class Main {
     System.out.println(Algorithm.firstApp(z,3));
   }
 }
+
+// 2/28/24
+import java.util.ArrayList;
+public class Main {
+  public static void main(String[]args) {
+    // The array sorted alphabetically with selection sort
+    String[] strings = {"zebra", "alpha"};
+    Algorithm.alphaSelectionSort(strings);
+    Algorithm.printStr(strings);
+
+    String[] strings2 = {"samus", "braviary", "jack"};
+    Algorithm.alphaSelectionSort(strings2);
+    Algorithm.printStr(strings2);
+
+    String[] strings3 = {"bruh", "hi", "hello", "world"};
+    Algorithm.alphaSelectionSort(strings3);
+    Algorithm.printStr(strings3);
+
+    // The array sorted alphabetically with insertion sort
+    String[] strings4 = {"zebra", "alpha"};
+    Algorithm.alphaInsertionSort(strings4);
+    Algorithm.printStr(strings4);
+
+    String[] strings5 = {"broad", "zesty", "jack"};
+    Algorithm.alphaInsertionSort(strings5);
+    Algorithm.printStr(strings5);
+
+    String[] strings6 = {"bruh", "jelloi", "fell", "lord"};
+    Algorithm.alphaInsertionSort(strings6);
+    Algorithm.printStr(strings6);
+
+    //The ArrayList sorted alphabetically with selection sort
+    ArrayList<String> list = new ArrayList<String>();
+    list.add("zebra");
+    list.add("alpha");
+    Algorithm.alphaSelectionSortList(list);
+    System.out.println(list);
+
+    ArrayList<String> list2 = new ArrayList<String>();
+    list2.add("zedd");
+    list2.add("lucario");
+    list2.add("samus");
+    Algorithm.alphaSelectionSortList(list2);
+    System.out.println(list2);
+    
+    ArrayList<String> list3 = new ArrayList<String>();
+    list3.add("blue");
+    list3.add("aqua");
+    list3.add("zero");
+    list3.add("cero");
+    Algorithm.alphaSelectionSortList(list3);
+    System.out.println(list3);
+    
+    // The ArrayList sorted alphabetically with insertion sort
+    ArrayList<String> list4 = new ArrayList<String>();
+    list4.add("zebra");
+    list4.add("alpha");
+    Algorithm.alphaInsertionSortList(list4);
+    System.out.println(list4);
+
+    ArrayList<String> list5 = new ArrayList<String>();
+    list5.add("ball");
+    list5.add("llama");
+    list5.add("delta");
+    Algorithm.alphaInsertionSortList(list5);
+    System.out.println(list5);
+
+    ArrayList<String> list6 = new ArrayList<String>();
+    list6.add("alpha");
+    list6.add("echo");
+    list6.add("delta");
+    list.add("bravo");
+    Algorithm.alphaInsertionSortList(list6);
+    System.out.println(list6);
+
+    //The ArrayList sorted in ascending order with selection sort
+    ArrayList<Integer> ints = new ArrayList<Integer>();
+    ints.add(1);
+    ints.add(0);
+    ints.add(-1);
+    Algorithm.ascendingSelectionSortList(ints);
+    System.out.println(ints);
+
+    ArrayList<Integer> ints2 = new ArrayList<Integer>();
+    ints2.add(-10);
+    ints2.add(-2);
+    ints2.add(-1);
+    Algorithm.ascendingSelectionSortList(ints2);
+    System.out.println(ints2);
+
+    ArrayList<Integer> ints3 = new ArrayList<Integer>();
+    ints3.add(121);
+    ints3.add(-4);
+    ints3.add(-14);
+    Algorithm.ascendingSelectionSortList(ints3);
+    System.out.println(ints3);
+
+    //The ArrayList sorted in ascending order with insertion sort
+    ArrayList<Integer> ints4 = new ArrayList<Integer>();
+    ints4.add(1);
+    ints4.add(0);
+    ints4.add(-1);
+    Algorithm.ascendingInsertionSortList(ints4);
+    System.out.println(ints4);
+
+    ArrayList<Integer> ints5 = new ArrayList<Integer>();
+    ints5.add(-102);
+    ints5.add(-101);
+    ints5.add(-100);
+    Algorithm.ascendingInsertionSortList(ints5);
+    System.out.println(ints5);
+
+    ArrayList<Integer> ints6 = new ArrayList<Integer>();
+    ints6.add(20);
+    ints6.add(9);
+    ints6.add(10);
+    Algorithm.ascendingInsertionSortList(ints6);
+    System.out.println(ints6);
+  }
+}
